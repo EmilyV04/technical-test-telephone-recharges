@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public class RechargeRequest {
     private String phone;
-    private Double value_recharge;
+    private Double valueRecharge;
     private Long operator;
     private Long seller;
 }

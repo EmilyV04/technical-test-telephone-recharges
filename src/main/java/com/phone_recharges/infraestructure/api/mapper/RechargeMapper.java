@@ -15,6 +15,10 @@ public interface RechargeMapper {
     @Mapping(source = "sellerDto.name", target = "seller.name")
     Recharge toEntity(RechargeDto rechargeDto);
 
+    @Mapping(source = "operator.id", target = "operatorDto.id")
+    @Mapping(source = "operator.name", target = "operatorDto.name")
+    @Mapping(source = "seller.id", target = "sellerDto.id")
+    @Mapping(source = "seller.name", target = "sellerDto.name")
     RechargeDto toDto(Recharge recharge);
 
     List<Recharge> toEntity(List<RechargeDto> rechargeDtos);

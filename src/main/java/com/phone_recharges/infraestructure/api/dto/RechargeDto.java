@@ -17,7 +17,7 @@ public class RechargeDto {
     @Column(nullable = false)
     private String phone;
     @Column(nullable = false)
-    private Double value_recharge;
+    private Double valueRecharge;
     @ManyToOne
     @JoinColumn(name="operator_id", referencedColumnName = "id")
     private OperatorDto operatorDto;
