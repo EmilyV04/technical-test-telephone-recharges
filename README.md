@@ -20,7 +20,7 @@ Este proyecto es una prueba técnica desarrollada utilizando Java, Spring Boot y
     MapStruct se utiliza en este proyecto para mapear los objetos de dominio a objetos DTO y viceversa, 
     lo que facilita la transferencia de datos entre las diferentes capas de la aplicación de manera eficiente y sin la necesidad de escribir código boilerplate.
 
-La aplicación se ejecutará en ´http://localhost:9090´.
+La aplicación se ejecutará en http://localhost:9090.
     
 Hasta el momento cuenta con 2 endpoints.
     
