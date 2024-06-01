@@ -20,14 +20,23 @@ Este proyecto es una prueba técnica desarrollada utilizando Java, Spring Boot y
     MapStruct se utiliza en este proyecto para mapear los objetos de dominio a objetos DTO y viceversa, 
     lo que facilita la transferencia de datos entre las diferentes capas de la aplicación de manera eficiente y sin la necesidad de escribir código boilerplate.
 
-La aplicación se ejecutará en http://localhost:9090.
-
-    Hasta el momento cuenta con 2 endpoints
+La aplicación se ejecutará en ´http://localhost:9090´.
+    
+Hasta el momento cuenta con 2 endpoints.
     
     http://localhost:9090/api/buy : Método POST que permite comprar/guardar una recarga 
-    http://localhost:9090/api/all : Método get que permite obtener todas las rescargas 
+    
+    JSON REQUEST BODY
+    {
+        "phone": "3014582302",
+        "valueRecharge": 30000.0,
+        "operator": 41,
+        "seller": 11
+    }
+    
+    http://localhost:9090/api/all : Método GET que permite obtener todas las rescargas 
 
-    Se recomienda el uso del sofware Postman para probar cada endpoint
+Se recomienda el uso del sofware Postman para probar cada endpoint.
 
 
 La base de datos H2 está incrustada en la aplicación y se inicializa utilizando un script SQL al arrancar la aplicación. Puedes acceder a la consola de administración de H2 mediante la siguiente URL:
@@ -39,6 +48,31 @@ http://localhost:9090/h2
     Contraseña: (dejar en blanco)
 
 Asegúrate de que la aplicación esté en ejecución antes de intentar acceder a la consola de H2.
+
+Por defecto al ejecutar la aplicación contará con datos de prueba en las siguientes tablas:
+
+OPERATOR -> operador telefónico
+
+| ID | NAME |
+|---|---|
+| 11 | Tigo |
+| 21 | Movistar |
+| 31 | Comcel |
+| 41 | Uff |
+
+SELLER -> vendedor de recargas
+
+| ID | NAME |
+|---|---|
+| 11 | Ana |
+| 21 | Pablo |
+
+RECHARGE -> recarga
+
+| ID | PHONE | VALUE_RECHARGE | OPERATOR_ID | SELLER_ID
+|---|---|---|---|---|
+| 11 | 3216549875 | 10000 | 11 | 21
+| 21 | 3258967418 | 50000 | 31 | 11
 
 ## Estructura del Proyecto
 
