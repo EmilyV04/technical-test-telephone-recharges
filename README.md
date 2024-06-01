@@ -24,8 +24,8 @@ La aplicación se ejecutará en http://localhost:9090.
 
     Hasta el momento cuenta con 2 endpoints
     
-    `http://localhost:9090/api/buy` : Método POST que permite comprar/guardar una recarga 
-    `http://localhost:9090/api/all` : Método get que permite obtener todas las rescargas 
+    http://localhost:9090/api/buy : Método POST que permite comprar/guardar una recarga 
+    http://localhost:9090/api/all : Método get que permite obtener todas las rescargas 
 
     Se recomienda el uso del sofware Postman para probar cada endpoint
 
